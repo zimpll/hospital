@@ -1,0 +1,143 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+   <link type="text/css" href="{% static 'dashboard/css/styles.css' %}" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script defer src="{% static 'dashboard/js/app.js' %}"></script>
+   <title>Главная</title>
+
+
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header"></header>
+      <main class="main">
+         <div class="form">
+   <h1 class="form__title">Министерство здравоохранения московской области</h1>
+</div>
+<div class="data-wrapper">
+   <div class="data-filter">
+      <p class="data-filter__subtitle">Отчетный период</p>
+      <div data-spollers class="spollers spollers__filter" data-one-spoller>
+         <div class="spollers__item">
+            <button type="button" data-spoller class="spollers__title">Выберите дату</button>
+            <div class="spollers__body">
+               <div class="spollers__links-inner spollers__links-inner--filter">
+                  <input class="data-filter__search" type="text" placeholder="Найти..." id="search-input">
+                  <button class="data-filter__accept data-filter__buttons">Применить</button>
+                  <button class="data-filter__clean data-filter__buttons">Очистить</button>
+                  <form class="data-filter__form">
+                     <div class="data-filter__date-list">
+                        <div class="data-filter__date-inner">
+                           <input class="data-filter__date-item" type="radio" id="05022023" value="05022023"
+                              name="period">
+                           <label for="05022023">05.02.2023 - 10.02.2023</label>
+                        </div>
+                        <div class="data-filter__date-inner">
+                           <input class="data-filter__date-item" type="radio" id="05032023" value="05032023"
+                              name="period">
+                           <label for="05032023">05.03.2023 - 10.03.2023</label>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="categories__block">
+         <p class="categories__subtitle">Разделы</p>
+         <div data-spollers class="spollers" data-one-spoller>
+            <div class="spollers__item">
+               <button type="button" data-spoller class="spollers__title">Поликлиники и амбулатория</button>
+               <div class="spollers__body">
+                  <div class="spollers__item">
+                     <h3 class="spollers__item-title">Поликлиники</h3>
+                     <div class="spollers__body spollers__body-border">
+                        <div class="spollers__links-inner">
+                           <a class="spollers__link" href="#">Поликлиника 1</a>
+                           <a class="spollers__link" href="#">Поликлиника 2</a>
+                           <a class="spollers__link" href="#">Поликлиника 3</a>
+                           <a class="spollers__link" href="#">Поликлиника 4</a>
+                           <a class="spollers__link" href="#">Поликлиника 5</a>
+                           <a class="spollers__link" href="#">Поликлиника 6</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="spollers__item">
+                     <h3 class="spollers__item-title">Амбулатории</h3>
+                     <div class="spollers__body spollers__body-border">
+                        <div class="spollers__links-inner">
+                           <a class="spollers__link" href="#">Амбулатория 1</a>
+                           <a class="spollers__link" href="#">Амбулатория 2</a>
+                           <a class="spollers__link" href="#">Амбулатория 3</a>
+                           <a class="spollers__link" href="#">Амбулатория 4</a>
+                           <a class="spollers__link" href="#">Амбулатория 5</a>
+                           <a class="spollers__link" href="#">Амбулатория 6</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="spollers__item">
+               <button type="button" data-spoller class="spollers__title">Амбулатория</button>
+               <div class="spollers__body">
+                  <div class="spollers__links-inner">
+                     <a class="spollers__link" href="#">Амбулатория 1</a>
+                     <a class="spollers__link" href="#">Амбулатория 2</a>
+                     <a class="spollers__link" href="#">Амбулатория 3</a>
+                     <a class="spollers__link" href="#">Амбулатория 4</a>
+                     <a class="spollers__link" href="#">Амбулатория 5</a>
+                     <a class="spollers__link" href="#">Амбулатория 6</a>
+                  </div>
+               </div>
+            </div>
+            <div class="spollers__item">
+               <button type="button" data-spoller class="spollers__title">Детство</button>
+               <div class="spollers__body">
+                  <div class="spollers__links-inner">
+                     <a class="spollers__link" href="#">Детская поликлиника 1</a>
+                     <a class="spollers__link" href="#">Детская поликлиника 2</a>
+                  </div>
+               </div>
+            </div>
+            <div class="spollers__item">
+               <button type="button" data-spoller class="spollers__title">Женская консультация</button>
+               <div class="spollers__body">
+                  <div class="spollers__links-inner">
+                     <a class="spollers__link" href="#">Женская консультация 1</a>
+                     <a class="spollers__link" href="#">Женская консультация 2</a>
+                  </div>
+               </div>
+            </div>
+            <div class="spollers__item">
+               <button type="button" data-spoller class="spollers__title">Стоматология</button>
+               <div class="spollers__body">
+                  <div class="spollers__links-inner">
+                     <a class="spollers__link" href="#">Стоматология 1</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="graph">График</div>
+</div>
+
+
+
+
+      </main>
+      <footer class="footer"></footer>
+   </div>
+
+
+</body>
+
+</html>
